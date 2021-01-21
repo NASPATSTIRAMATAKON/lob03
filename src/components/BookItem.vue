@@ -1,15 +1,18 @@
 <template>
     <div class="book-item">
         <h1>{{book.title}}</h1><br/>
-        <img v-bind:src="book.thumbnailUrl" /><br/>
-        <b>Author:</b>  {{book.author}} <br/>
-        <b>category:</b> {{book.category}} <br/>
-        <b>ISBN:</b> {{book.isbn}}<br/>
-        <b>Pages:</b> {{book.pageCount}} <br/>
-        <b>Deacription:</b><br/>
-        <p>{{book.shortDescription}}</p>
-       
-        
+
+        <div style="width:100%;text-align:left;">
+            <img style="float: left;padding:20px" width="200px" v-bind:src="book.thumbnailUrl" /><br/>
+            <div style="padding:20px">
+                <b>Author:</b>  {{book.author}} <br/>
+                <b>category:</b> {{book.category}} <br/>
+                <b>ISBN:</b> {{book.isbn}}<br/>
+                <b>Pages:</b> {{book.pageCount}} <br/>
+                <b>Deacription:</b><br/>
+                <p>{{book.shortDescription}}</p>
+            </div>
+        </div><br/>
     </div>
 </template>
 

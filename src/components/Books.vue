@@ -10,6 +10,7 @@
 
 
 <script>
+//import bookitem
 import BookItem from './BookItem.vue'
 export default {
   name: 'Books',
